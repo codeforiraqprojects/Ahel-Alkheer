@@ -1,0 +1,51 @@
+
+<ion-header> 
+  
+  <ion-navbar color="primary" >
+
+     <ion-title> انشاء حساب</ion-title> 
+
+    </ion-navbar>
+    
+   </ion-header>
+
+
+  <ion-content padding>
+
+  <!-- <ion-list> -->
+
+      <!-- <p text-center> قم بانشاء حسابك</p>     -->
+   
+
+    <ion-item>
+      <ion-label floating> <ion-icon ios="ios-person" md="md-person" color="danger"> البريدالالكتروني</ion-icon> </ion-label>
+
+         <ion-input type="text" [(ngModel)]="email" ></ion-input>
+    </ion-item>
+                 
+    <ion-item>
+         <ion-label floating>  <ion-icon ios="ios-lock" md="md-lock" color="danger"> كلمة المرور </ion-icon></ion-label>
+         <ion-input type="password"  [(ngModel)]="password"></ion-input>
+    </ion-item>
+
+      
+    <div padding>
+    <!-- <ion-item>                   -->
+      <button ion-button  block large  icon-right  color="primary"  (click)="Signup()"  >
+        <div style="margin: 8px">اضافة حساب</div>       
+      </button>        
+    <!-- </ion-item>  -->
+    
+  </div>
+
+   <!-- </ion-list> -->
+  
+
+ 
+</ion-content>
+
+ 
+ 
+
+   
+   

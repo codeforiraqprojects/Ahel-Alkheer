@@ -1,0 +1,80 @@
+<style>
+
+    .imgSize3{
+      width: 40%;
+  }
+ 
+ .card-header-ios1 {
+ padding: 2px;
+ }
+ 
+ </style>
+
+
+
+
+<ion-header no-border  >
+  <ion-navbar color="showHumanColor" no-border >
+
+  </ion-navbar >
+ 
+</ion-header>
+ 
+<ion-content  >
+  <img src="assets/imgs/halat.png"   /> 
+
+
+
+
+
+
+
+  <div padding>
+      <ion-card>
+          <ion-card-header>
+              <p> المتبرع : {{myInfo.firstname}}   </p>
+          </ion-card-header>         
+        </ion-card>
+        <ion-card>
+            <ion-card-header>
+                <p>  {{myInfo.details}}   </p>
+            </ion-card-header>         
+          </ion-card>
+          <ion-card>
+              <ion-card-header class="card-header-ios1">
+  <ion-grid  >
+      <ion-row>
+        <ion-col col-6 >                   
+            <img class="imgSize3" (click)="goToNeeding()"   src="assets/imgs/item/compass-pup.png"   />           
+        </ion-col>
+        <ion-col col-6  class="imgSize3">      
+            <p>  {{myInfo.address}}   </p>
+      </ion-col>
+      </ion-row>
+    </ion-grid>
+              </ion-card-header>         
+            </ion-card>
+
+            <ion-card>
+                <ion-card-header  class="card-header-ios1">
+    <ion-grid  >
+    <ion-row>
+      <ion-col col-6 >                   
+          <img class="imgSize3" (click)="goToNeeding()"   src="assets/imgs/item/phone-pup.png"   />           
+      </ion-col>
+      <ion-col col-6  class="imgSize3">      
+          <p>  {{myInfo.phone}}   </p>
+    </ion-col>
+    </ion-row>
+  </ion-grid>
+                </ion-card-header>         
+              </ion-card>
+            </div>
+
+
+ 
+
+ 
+
+  </ion-content>
+  

@@ -1,0 +1,54 @@
+
+<ion-header> 
+  <ion-navbar  color="primary" >
+     <ion-title>تسجيل دخول</ion-title> 
+     <ion-buttons end>
+      <button ion-button icon-only (click)="goToMain()">
+        <ion-icon name="home"></ion-icon>
+      </button>
+    </ion-buttons>
+    </ion-navbar>
+   </ion-header>
+
+
+<ion-content padding>
+
+  <!-- <ion-list> -->
+
+     <ion-item>
+         <ion-label floating> <ion-icon ios="ios-person" md="md-person" color="danger"> البريدالالكتروني</ion-icon> </ion-label>
+        
+         <ion-input type="text" [(ngModel)]="email" ></ion-input>
+    </ion-item>
+      
+   <ion-item>
+         <ion-label floating>  <ion-icon ios="ios-lock" md="md-lock" color="danger"> كلمة المرور </ion-icon></ion-label>
+         <ion-input type="password"  [(ngModel)]="password" ></ion-input>
+    </ion-item>
+      
+    
+  <!-- </ion-list> -->
+    <!-- <ion-item> -->
+ <div padding>
+           
+  <button ion-button block large  icon-right  (click)= "  Login() " > 
+              <ion-icon name= ios-log-in large> دخول </ion-icon>   
+              </button>
+     <!-- </ion-item> -->
+        
+        <p text-center> اذا لم تمتلك حسابا قم بالتسجيل اولا </p>  
+      
+      <!-- <ion-item> -->
+      <button ion-button block large  icon-right (click)="signUP()">
+        <div style="margin: 8px">انشاء حساب</div>
+          <ion-icon name= ios-log-in  large>  </ion-icon> 
+      </button>
+      <!-- </ion-item> -->
+
+ 
+
+  </div>
+
+</ion-content>
+  
+

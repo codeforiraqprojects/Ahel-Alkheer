@@ -1,0 +1,60 @@
+page-addhumancases {
+    .label{
+        padding-top: 0;
+        padding-right: 10px;
+        color:#1f2022;
+        font-weight: bold;
+        font-size: 15px;
+       
+         } 
+     
+   .ion-list{
+       padding-top:10px    ;
+    
+       
+        }
+   
+   
+   
+      .input{
+       background-color:white;
+       margin:0; 
+       border-radius: 25px;
+       color:black;
+       padding-right: 5px;
+       font-size: 15px; 
+       border: 1px solid #127bca;
+      
+    
+        }
+        
+    .item{
+          margin: 0;
+  
+       
+   }
+   .ion-textarea{
+       width: 100%;
+       height: 100px;
+       padding: 12px 20px;
+       box-sizing: border-box;
+       border: 2px solid #ccc;
+       border-radius: 4px;
+       background-color: #f8f8f8;
+       resize: none;
+   }
+   
+   .button{
+       border-radius: $button-md-border-radius;
+
+       width: 100%;
+       height: 45px;
+       margin:0;          
+       padding-right: 5px;
+       border:2px; 
+       background-color: #488aff;     
+   }
+
+   
+
+}

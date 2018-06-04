@@ -1,0 +1,75 @@
+<style>
+
+
+      .ion-content {
+    background: url("assets/imgs/item/mbg.png") no-repeat fixed center; 
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     background-size: cover;
+     background-color: white;
+     
+ }
+
+
+ .imgSize{
+     padding: 3%;
+ }
+
+ .imgSize2{
+     padding-left: 6%;
+ }
+ .imgSize3{
+     padding-right: 6%;
+ }
+
+</style>
+
+
+<ion-content   >
+    <img src="assets/imgs/pic9.png" style="width:100%"/>
+  
+    <div  class="imgSize"  >
+ 
+
+        <ion-grid  class="  mypaddingHome">
+                <ion-row>
+                  <ion-col col-6 class="imgSize2">
+                      
+                          <img (click)="goToMap()"   src="assets/imgs/item/mapp.png"   /> 
+                    
+                  </ion-col>
+                  <ion-col col-6 class="imgSize3">
+                  
+                      <img   (click)="goToHumancase()" src="assets/imgs/item/instaniya.png"   /> 
+                 
+                  </ion-col>
+   
+                </ion-row>
+              </ion-grid>
+          
+       
+            
+              <ion-grid  class="  mypaddingHome" >
+                    <ion-row>
+                    
+                      <ion-col col-6 class="imgSize2">
+                              
+                          <img  (click)="goToNeeding()"   src="assets/imgs/item/hajaa.png"   /> 
+                          
+                      </ion-col>
+                      <ion-col col-6  class="imgSize3">
+                           
+                        <img  (click)=" goToAbout()"   src="assets/imgs/item/aboutta.png"   /> 
+                        
+                    </ion-col>
+                    </ion-row>
+                  </ion-grid>
+          
+       
+ 
+            
+                </div>
+                     
+
+
+</ion-content>

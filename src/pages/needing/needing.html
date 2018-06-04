@@ -1,0 +1,59 @@
+
+ <ion-header  style="  border:3px solid #0FB9B1;" >
+
+  <ion-navbar color="tafasil"> 
+ 
+   
+        <ion-buttons style="  border:3px solid #0FB9B1;" end>
+          <button style="  border:3px solid #0FB9B1;" ion-button color="light"  (click)="goToAdd()">
+              <ion-icon  style="  border:3px solid #0FB9B1;"  name='ios-add' is-active="false"></ion-icon>&nbsp;
+              اضف
+          </button>
+        </ion-buttons>
+          
+  </ion-navbar>
+ </ion-header>
+
+
+   
+     
+      <ion-content >
+          <img src="assets/imgs/haja.png"   /> 
+
+
+
+            <ion-list>
+                
+                <div *ngFor="let item of items   | async json">
+                    <div  *ngIf="item.hide != '1'" >  
+                <ion-item-sliding>
+                  <ion-item>
+                      <ion-thumbnail item-start *ngIf="userid !== item.addBy">
+                          <img class="img1" src="./assets/imgs/about3.png">
+                        </ion-thumbnail>
+                    <ion-thumbnail item-start *ngIf="userid == item.addBy">
+                        <img class="img1" src="./assets/imgs/about4.png">
+                      </ion-thumbnail>
+
+                    <p>{{item.lastname}}</p>
+                    <button ion-button clear item-end 
+                (click)="itemSelected(item.key,item.firstname,item.lastname,
+                item.address,item.phone,item.infor)">التفاصيل</button>
+ 
+                  </ion-item>
+                 
+                  <ion-item-options side="right">
+                    <button ion-button color="danger"  *ngIf="userid == item.addBy" (click)="deleteMy(item.key)">
+                      <ion-icon name="ios-trash"></ion-icon>
+                      حذف
+                    </button>
+                  </ion-item-options>
+                </ion-item-sliding>
+              </div>
+            </div>
+              </ion-list>
+
+  
+ 
+   </ion-content>
+  

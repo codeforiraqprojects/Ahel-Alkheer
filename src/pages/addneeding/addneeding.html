@@ -1,0 +1,68 @@
+
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-buttons end>
+      <button  ion-button color="light"  (click)="goToMain()">
+          <ion-icon name='ios-home' is-active="false"></ion-icon>&nbsp;
+          
+      </button>
+    </ion-buttons>
+    <ion-title> اضافة حاجة</ion-title>
+    
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content >
+
+    <ion-list  no-lines>   
+            
+    
+ 
+      <ion-item   >               
+        <ion-label  floating > اسم الحاجة: </ion-label>           
+         <ion-input  [(ngModel)]= "firstname"  class="ion-input-custom"></ion-input> 
+          </ion-item>        
+             
+             
+            <ion-item >          
+               <ion-label  floating>  اسم المتبرع:</ion-label>
+               <ion-input     type="text"  [(ngModel)]= "lastname"  class="ion-input-custom" ></ion-input>              
+             </ion-item>
+ 
+             <ion-item>
+                 <ion-label   floating> عنوان السكن  :</ion-label>
+                 <ion-input  type="text"  [(ngModel)]= "address"  class="ion-input-custom"   ></ion-input>
+               </ion-item>      
+           
+               
+             <ion-item >
+               <ion-label   floating > رقم الهاتف : </ion-label>
+               <ion-input  type="number" [(ngModel)]= "phone"class="ion-input-custom" ></ion-input>
+             </ion-item>
+              
+             <ion-item >
+               <ion-label   floating>اكتب عن الحاجة : </ion-label>
+               <ion-textarea   type="text"  rows="4" [(ngModel)]= "infor" class="ion-input-custom" > </ion-textarea> 
+               </ion-item >
+ 
+          <ion-item>
+       
+     <!-- <ion-item> -->
+      <button ion-button block large  icon-right (click)="createDevice(firstname,lastname,address,phone,
+      infor)">
+        <div style="margin: 8px">اضافة</div>
+         
+      </button>
+      <!-- </ion-item> -->
+
+
+          </ion-item>    
+        
+   
+    
+   </ion-list >
+ 
+
+</ion-content>
+

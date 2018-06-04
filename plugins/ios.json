@@ -1,0 +1,36 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.codeforiraq.ahlalkheer"
+    },
+    "cordova-plugin-facebook4": {
+      "APP_ID": "230241697548133",
+      "APP_NAME": "ahl-khar",
+      "PACKAGE_NAME": "com.codeforiraq.ahlalkheer"
+    },
+    "cordova-plugin-googleplus": {
+      "REVERSED_CLIENT_ID": "614542000368-sgioom8nioq20dii53dl8r765prjrkr7.apps.googleusercontent.com",
+      "PACKAGE_NAME": "com.codeforiraq.ahlalkheer"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "com.codeforiraq.ahlalkheer"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.codeforiraq.ahlalkheer"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.codeforiraq.ahlalkheer"
+    },
+    "ionic-plugin-keyboard": {
+      "PACKAGE_NAME": "com.codeforiraq.ahlalkheer"
+    }
+  },
+  "dependent_plugins": {}
+}

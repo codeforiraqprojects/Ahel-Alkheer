@@ -1,0 +1,38 @@
+<style>
+
+  .list-ios > .item-block:first-child {
+    border-top: 0.55px solid #ffffff;
+}
+
+</style>
+
+
+
+<ion-header no-border  >
+    <ion-navbar color="showHumanColor" no-border >
+    </ion-navbar >
+  </ion-header>
+       <ion-content >
+          <img src="assets/imgs/asmaaa.png"   /> 
+ 
+  
+       <ion-list > 
+  
+      <button class="caselist" ion-item  *ngFor=" let item  of items$  | async json " (click)="itemSelected(item.payload.val().key,item.payload.val().firstname,item.payload.val().lastname,item.payload.val().address,item.payload.val().phone,item.payload.val().details)"> 
+          
+        <ion-avatar item-start>
+          <img class="img1" src="assets/imgs/person3.png">
+        </ion-avatar>
+     
+        <p>{{item.payload.val().firstname}} </p>
+       
+         
+        <button ion-button clear item-end> التفاصيل</button>
+  
+    </button>
+  
+  </ion-list>
+
+  
+  </ion-content>
+  

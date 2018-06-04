@@ -1,0 +1,36 @@
+
+.ios, .md
+{
+page-showhumancase {
+    ion-item  { 
+   
+        background-color:$card-md-background-color	;
+    }
+
+    ion-card  {
+  
+       background:$card-md-background-color ;
+       max-height:500px;    
+       border: none;
+       padding-right:0;
+       padding-left: 0;
+       width:100%;
+       position: relative;
+       color:white;
+       margin-right: $card-ios-margin-right;
+       font-family: $font-family-md-base;
+    }
+
+    .ion-avatar {   
+        
+        z-index: 89;
+    }
+    
+   
+  
+
+
+
+  }
+}
+

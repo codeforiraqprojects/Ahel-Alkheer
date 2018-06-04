@@ -1,0 +1,67 @@
+
+<ion-header no-border>
+    <ion-navbar color="primary"   >
+         <ion-title >
+           إضافة حالة إنسانية
+         </ion-title>
+    </ion-navbar>
+ </ion-header>
+    
+ 
+ <ion-content  >
+
+     <ion-list no-lines  > 
+   
+             <ion-item >
+               <ion-label floating >الاسم الاول</ion-label>
+               <ion-input 
+                     type="text" 
+                     [(ngModel)]= "firstname" ></ion-input>
+             </ion-item>
+
+             <ion-item>
+                <ion-label floating  >الاسم الثاني</ion-label>
+                <ion-input 
+                       type="text"  
+                       [(ngModel)]= "lastname"></ion-input>
+             </ion-item>
+         
+             <ion-item>
+                <ion-label floating>العنوان</ion-label>
+                <ion-input 
+                        type="text"  
+                        [(ngModel)]= "address"></ion-input>
+             </ion-item>
+ 
+             <ion-item>
+               <ion-label floating>رقم الهاتف</ion-label>
+               <ion-input 
+                           type="text"  
+                           [(ngModel)]= "phone"></ion-input>
+             </ion-item>
+       
+         
+
+ 
+            <ion-item>
+              <ion-label floating>اكتب عن حالتك</ion-label>
+              <ion-textarea 
+                       rows="4"
+                       type="text" 
+                       [(ngModel)]= "details" ></ion-textarea>
+            </ion-item>
+            
+
+            
+       <ion-item>
+
+       <button ion-button  block large  icon-right color="primary" (click)="addcase(firstname,lastname,address,phone,details)" >
+           
+           <ion-icon name=ios-add-circle large ></ion-icon>
+             إضافة حاله
+          
+         </button>
+       </ion-item>
+        
+     </ion-list> 
+ </ion-content>
